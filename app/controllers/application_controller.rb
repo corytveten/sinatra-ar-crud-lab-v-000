@@ -20,6 +20,7 @@ class ApplicationController < Sinatra::Base
     @post.content = @content
     @post.save
     @posts = Post.all
+    redirect to '/posts'
   end
 
   get '/posts' do
