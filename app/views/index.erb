@@ -1,5 +1,5 @@
 
 <% @posts.all.each do |post| %>
-  <h3><% post.name %></h3>
-  <p><% post.content %></p>
-  <% end %>
+  <%= post.name %>
+  <%= post.content %>
+<% end %>
